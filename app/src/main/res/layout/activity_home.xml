@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent"
+   android:layout_width="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/toolbar_id"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="?attr/actionBarSize"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_id" />
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:itemIconTint="@color/colorstate"
+        app:itemTextColor="@color/colorstate"
+        app:menu="@menu/menu_resource" />
+
+
+
+</RelativeLayout>

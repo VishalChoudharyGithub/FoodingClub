@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".FRAGMENT_profile">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="194dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@color/App"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="6dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:text="Number"
+            android:textAllCaps="true"
+            android:textColor="@color/App"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/profile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="6dp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:text="Email"
+            android:textAllCaps="true"
+            android:textColor="@color/App"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:paddingLeft="6dp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="address"
+            android:textAllCaps="true"
+            android:textColor="@color/App"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/profile_update"
+
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/summit_btn"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

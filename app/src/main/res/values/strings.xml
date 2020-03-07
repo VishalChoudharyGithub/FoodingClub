@@ -1,0 +1,9 @@
+<resources>
+    <string name="App_name"><font face="cursive" fgcolor='#F4C724'><b>FOODING CLUB</b></font></string>
+    <string name="Update_name"><font face="cursive" fgcolor='#F4C724'><b>UPDATE INFO</b></font></string>
+    <string name="title_activity_home_fragment">Home_fragment</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

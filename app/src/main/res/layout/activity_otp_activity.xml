@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP_activity"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="237dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enter OTP"
+        android:textColor="@color/App"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enter_otp"
+        app:layout_constraintStart_toStartOf="@+id/enter_otp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Otp_progress"
+        android:layout_marginStart="8dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/App"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_otp"
+        app:layout_constraintStart_toEndOf="@+id/enter_otp"
+        app:layout_constraintTop_toTopOf="@+id/enter_otp" />
+
+    <EditText
+        android:id="@+id/enter_otp"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textview_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_TextView"
+        android:layout_width="327dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="We sent a One Time Password Valid\n only for 30 seconds "
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_otp" />
+
+    <Button
+        android:id="@+id/Sign_in"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/summit_btn"
+        android:text="SignIn"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:onClick="sign_in_listner"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_TextView" />
+
+    <Button
+        android:id="@+id/Resend_code_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/summit_btn"
+        android:enabled="false"
+        android:text="Resend Code"
+        android:onClick="Resend_btn_click"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Sign_in"
+        app:layout_constraintTop_toTopOf="@+id/Sign_in"
+        app:layout_constraintRight_toRightOf="@+id/Sign_in"
+        app:layout_constraintLeft_toLeftOf="@+id/Sign_in"/>
+
+    <Button
+        android:id="@+id/change_num_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/summit_btn"
+        android:enabled="false"
+        android:onClick="Change_num_click"
+        android:text="Change Number"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Resend_code_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1055794425089",
+    "firebase_url": "https://foodingclub-60df2.firebaseio.com",
+    "project_id": "foodingclub-60df2",
+    "storage_bucket": "foodingclub-60df2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055794425089:android:a6c73601cf091597",
+        "android_client_info": {
+          "package_name": "com.example.foodingclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055794425089-cmkl70geeubt9u3uourmb0go0vke1i0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodingclub",
+            "certificate_hash": "8acce1245439bf08a950b63cf22ff8bd512650a5"
+          }
+        },
+        {
+          "client_id": "1055794425089-4o50q77de2hpaa2bromlibdp7chcb30o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodingclub",
+            "certificate_hash": "9d7ada910a0d3a5248719ab8c73d10341c9af9ed"
+          }
+        },
+        {
+          "client_id": "1055794425089-63vk3gue27c5suhfefj4hahol9i7s60e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC027Ez4i6GniEdN2JHCob0CBZiPz-QcGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055794425089-63vk3gue27c5suhfefj4hahol9i7s60e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

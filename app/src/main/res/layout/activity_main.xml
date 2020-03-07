@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="454dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/viewpager1" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewpager2" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/viewpager3" />
+    </ViewFlipper>
+
+    <EditText
+        android:id="@+id/enter_num_id"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/country_btn"
+        android:text="+91"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_num_id"
+        app:layout_constraintEnd_toStartOf="@+id/enter_num_id"
+        app:layout_constraintTop_toTopOf="@+id/enter_num_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/enter_num_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/App"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_num_id"
+        app:layout_constraintStart_toEndOf="@+id/enter_num_id"
+        app:layout_constraintTop_toTopOf="@+id/enter_num_id" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/summit_btn"
+        android:onClick="verification_send_method"
+
+        android:text="NEXT"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_num_id"
+        app:layout_constraintVertical_bias="0.598" />
+
+
+</android.support.constraint.ConstraintLayout>
